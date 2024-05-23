@@ -1,0 +1,66 @@
+Using backend: pytorch
+/root/miniconda3/lib/python3.8/site-packages/torch/nn/functional.py:1628: UserWarning: nn.functional.tanh is deprecated. Use torch.tanh instead.
+  warnings.warn("nn.functional.tanh is deprecated. Use torch.tanh instead.")
+/root/miniconda3/lib/python3.8/site-packages/cupy/cuda/compiler.py:464: UserWarning: cupy.cuda.compile_with_cache has been deprecated in CuPy v10, and will be removed in the future. Use cupy.RawModule or cupy.RawKernel instead.
+  warnings.warn(
+/root/miniconda3/lib/python3.8/site-packages/torch/nn/functional.py:3060: UserWarning: Default upsampling behavior when mode=bilinear is changed to align_corners=False since 0.4.0. Please specify align_corners=True if the old behavior is desired. See the documentation of nn.Upsample for details.
+  warnings.warn("Default upsampling behavior when mode={} is changed "
+
+Loading Content Dataset from /root/autodl-fs/datasets/train2014 ...
+Loading Style Dataset from /root/autodl-fs/datasets/train ...
+
+Mon Mar 25 15:49:44 2024   Start Training ...
+Mon Mar 25 15:49:47 2024   Batch [     0/320000]   Content Loss: 5.2816  Style Loss: 201.6888
+Mon Mar 25 15:49:50 2024   Batch [     1/320000]   Content Loss: 4.9063  Style Loss: 183.3976
+Mon Mar 25 15:49:51 2024   Batch [     2/320000]   Content Loss: 4.7166  Style Loss: 168.8895
+Mon Mar 25 15:49:52 2024   Batch [     3/320000]   Content Loss: 4.5734  Style Loss: 143.3789
+Mon Mar 25 15:49:53 2024   Batch [     4/320000]   Content Loss: 4.4924  Style Loss: 139.8734
+Mon Mar 25 15:49:54 2024   Batch [     5/320000]   Content Loss: 4.4363  Style Loss: 141.4315
+Mon Mar 25 15:49:55 2024   Batch [     6/320000]   Content Loss: 4.4923  Style Loss: 134.5475
+Mon Mar 25 15:49:56 2024   Batch [     7/320000]   Content Loss: 4.4259  Style Loss: 129.9693
+Mon Mar 25 15:49:57 2024   Batch [     8/320000]   Content Loss: 4.4989  Style Loss: 130.2565
+Mon Mar 25 15:49:59 2024   Batch [     9/320000]   Content Loss: 4.5610  Style Loss: 130.5116
+Mon Mar 25 15:50:00 2024   Batch [    10/320000]   Content Loss: 4.5022  Style Loss: 126.4892
+Mon Mar 25 15:50:00 2024   Batch [    11/320000]   Content Loss: 4.5350  Style Loss: 121.8592
+Mon Mar 25 15:50:01 2024   Batch [    12/320000]   Content Loss: 4.6021  Style Loss: 119.2706
+Mon Mar 25 15:50:03 2024   Batch [    13/320000]   Content Loss: 4.7359  Style Loss: 114.8067
+Mon Mar 25 15:50:04 2024   Batch [    14/320000]   Content Loss: 5.0268  Style Loss: 113.3606
+Mon Mar 25 15:50:05 2024   Batch [    15/320000]   Content Loss: 5.0088  Style Loss: 110.6530
+Mon Mar 25 15:50:06 2024   Batch [    16/320000]   Content Loss: 5.1038  Style Loss: 107.4046
+Mon Mar 25 15:50:06 2024   Batch [    17/320000]   Content Loss: 5.1337  Style Loss: 107.7268
+Mon Mar 25 15:50:07 2024   Batch [    18/320000]   Content Loss: 5.1491  Style Loss: 105.6875
+Mon Mar 25 15:50:08 2024   Batch [    19/320000]   Content Loss: 5.1540  Style Loss: 102.8605
+Mon Mar 25 15:50:09 2024   Batch [    20/320000]   Content Loss: 5.2340  Style Loss: 103.5236
+Mon Mar 25 15:50:10 2024   Batch [    21/320000]   Content Loss: 5.2508  Style Loss: 101.1406
+Mon Mar 25 15:50:11 2024   Batch [    22/320000]   Content Loss: 5.2648  Style Loss: 99.4967
+Mon Mar 25 15:50:11 2024   Batch [    23/320000]   Content Loss: 5.2274  Style Loss: 98.0784
+Mon Mar 25 15:50:12 2024   Batch [    24/320000]   Content Loss: 5.2603  Style Loss: 96.2256
+Mon Mar 25 15:50:13 2024   Batch [    25/320000]   Content Loss: 5.2154  Style Loss: 95.3676
+Mon Mar 25 15:50:14 2024   Batch [    26/320000]   Content Loss: 5.1773  Style Loss: 95.3389
+Mon Mar 25 15:50:15 2024   Batch [    27/320000]   Content Loss: 5.1933  Style Loss: 97.0212
+Mon Mar 25 15:50:16 2024   Batch [    28/320000]   Content Loss: 5.2155  Style Loss: 96.0818
+Mon Mar 25 15:50:17 2024   Batch [    29/320000]   Content Loss: 5.2159  Style Loss: 94.4497
+Mon Mar 25 15:50:18 2024   Batch [    30/320000]   Content Loss: 5.2220  Style Loss: 93.3221
+Mon Mar 25 15:50:19 2024   Batch [    31/320000]   Content Loss: 5.2358  Style Loss: 92.2881
+Mon Mar 25 15:50:19 2024   Batch [    32/320000]   Content Loss: 5.2147  Style Loss: 90.9122
+Mon Mar 25 15:50:20 2024   Batch [    33/320000]   Content Loss: 5.2314  Style Loss: 89.5487
+Traceback (most recent call last):
+  File "train.py", line 158, in <module>
+    _, loss_c, loss_s = network(content_images, style_images)
+  File "/root/miniconda3/lib/python3.8/site-packages/torch/nn/modules/module.py", line 727, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/root/autodl-tmp/StyleTransfer/GNN/StyleTransferGNN.PyTorch/net.py", line 190, in forward
+    content_t = self.graph(style_feat, content_feat)
+  File "/root/miniconda3/lib/python3.8/site-packages/torch/nn/modules/module.py", line 727, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/root/autodl-tmp/StyleTransfer/GNN/StyleTransferGNN.PyTorch/graph_agg_v2.py", line 63, in forward
+    ys_patch, (H,W) = self.depatch_embed((ys, yc))
+  File "/root/miniconda3/lib/python3.8/site-packages/torch/nn/modules/module.py", line 727, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/root/miniconda3/lib/python3.8/site-packages/torch/cuda/amp/autocast_mode.py", line 135, in decorate_autocast
+    return func(*args, **kwargs)
+  File "/root/autodl-tmp/StyleTransfer/GNN/StyleTransferGNN.PyTorch/dpt_models/depatch_embed.py", line 123, in forward
+    return self.get_output(img, pred_offset, img_size=(H, W), output_size=output_size), output_size
+  File "/root/autodl-tmp/StyleTransfer/GNN/StyleTransferGNN.PyTorch/dpt_models/depatch_embed.py", line 141, in get_output
+    value_spatial_shapes = torch.as_tensor(img_size, dtype=torch.long, device=pred_offset.device).view(1, 2)
+KeyboardInterrupt

@@ -1,0 +1,4 @@
+# ninja log v5
+2	3086	1642940300000000000	/workspace/jingyongcheng/CVPR_NST/deformable_based_on_AdaIN_v5_yang_v2/ops/build/temp.linux-x86_64-3.8/workspace/jingyongcheng/CVPR_NST/deformable_based_on_AdaIN_v5_yang_v2/ops/src/cpu/ms_deform_attn_cpu.o	d1389939c52689cb
+2	17897	1642940315000000000	/workspace/jingyongcheng/CVPR_NST/deformable_based_on_AdaIN_v5_yang_v2/ops/build/temp.linux-x86_64-3.8/workspace/jingyongcheng/CVPR_NST/deformable_based_on_AdaIN_v5_yang_v2/ops/src/vision.o	a3ca5df19838bdb8
+3	35008	1642940332000000000	/workspace/jingyongcheng/CVPR_NST/deformable_based_on_AdaIN_v5_yang_v2/ops/build/temp.linux-x86_64-3.8/workspace/jingyongcheng/CVPR_NST/deformable_based_on_AdaIN_v5_yang_v2/ops/src/cuda/ms_deform_attn_cuda.o	b81c8984ac12ab26
