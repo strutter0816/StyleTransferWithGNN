@@ -1,3 +1,21 @@
+# Model Structure(For video Task)
+
+It has several submodule
+
+- Input:target Style Image & two consistent frames of video
+- Image encoding module
+-  local patch-based manipulation module 
+   - Cut Patches and make Heterogeneous Patch Vertices
+   
+   -  Build Inter-Intra-KNN edges among Heterogeneous Patch Vertices.
+
+   - Deformable graph convolution process to generate aggregated patches
+   
+- Patch To Image
+- Loss(Temporal Loss & Spatial Loss)
+
+![image-20240524192541490](assets/image-20240524192541490.png)
+
 # How to use
 
 ## Training Set
@@ -46,5 +64,33 @@ It took 3 days for Image Task Training,1 day for Video Stask Training
 
 ## Acknowledgements
 Our code is based on the wonderful work of [pytorch-AdaIN](https://github.com/naoto0804/pytorch-AdaIN) and [DPT](https://github.com/CASIA-IVA-Lab/DPT). We deeply appreciate their great codes!
-## Example
-Coming Soon
+# My Result
+### Image
+
+For Image task, I selected 4 content image and 5 style Image.Here is the result
+
+![image-20240524193302766](assets/image-20240524193302766.png)
+
+### Video
+
+**Style Image:**
+
+![image-20240524193545905](assets/image-20240524193545905.png)
+
+
+
+**Raw video:**
+
+![Raw](assets/Raw-17165546871504.gif)
+
+**Stylized Video Without temporal loss:**
+
+![Stylized video without temporal loss](assets/NoLoss.gif)
+
+It didn't concern about temporal loss,causing too much flicker
+
+**Stylized video with temporal loss** 
+
+Adding time loss, greatly reduces flickering and is more consistent between frames
+
+![Stylized video with temporal loss](assets/WIthLoss.gif)
