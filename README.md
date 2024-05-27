@@ -43,9 +43,14 @@ cd ops
 sh ./make.sh
 ```
 ## Training
+Image Task
 
 ```
-python train.py --style_weight 10.0 --conv gatconv --patch_size 4
+python trainImage.py --style_weight 10.0 --conv gatconv --patch_size 4
+```
+Video Task
+```
+python trainVideo.py --style_weight 10.0 --conv gatconv --patch_size 4
 ```
 Here is the link for pre-models and Best trained-models  [Models](
 https://drive.google.com/drive/folders/1fBE7VixfRGDCU5vJ1CXgjAtxAxmJMVSp?usp=drive_link)
