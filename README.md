@@ -55,13 +55,14 @@ python trainVideo.py --style_weight 10.0 --conv gatconv --patch_size 4
 Here is the link for pre-models and Best trained-models  [Models](
 https://drive.google.com/drive/folders/1fBE7VixfRGDCU5vJ1CXgjAtxAxmJMVSp?usp=drive_link)
 
-## Testing image
+## Testing
+Image
 ```
 python test.py --conv gatconv --patch_size 4 
 ```
-## Test video
+Video
 ```
-python testVid.py --video_name xxx --style_video_name xxx --style_dir xxx
+python testVid.py --video_name <your video name> --style_video_name <your stylized video name> --style_dir <Target style image path>
 ```
 ## GPU Resources
 Please kindly note that our code needs at least 30 GB GPU memory to run. We used RTX 3080 when we trained and tested
