@@ -67,7 +67,7 @@ python testVid.py --video_name <your video name> --style_video_name <your styliz
 ```
 ## GPU Resources
 Please kindly note that our code needs at least 30 GB GPU memory to run. We used RTX 3080 when we trained and tested
-It took 3 days for Image Task Training,1 day for Video Stask Training
+It took 3 days for Image Task Training,1 day for Video Stask Training of per style image
 
 ## Acknowledgements
 Our code is based on the wonderful work of [pytorch-AdaIN](https://github.com/naoto0804/pytorch-AdaIN) and [DPT](https://github.com/CASIA-IVA-Lab/DPT). We deeply appreciate their great codes!
